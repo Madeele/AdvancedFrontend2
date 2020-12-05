@@ -17,8 +17,13 @@ function appendExhibitions(exhibitions) {
      for (let exhibition of exhibitions) {
           template += /*html*/ `
           <article class="exhibition-item">
-               <h1 class="exhibition-name">${exhibition.name}</h1>
-               <p class="exhibition-date">${exhibition.date}</p>
+               <div class="image-container">
+                    <img src="${exhibition.image}" alt="exhibition" class="exhibition-image">
+               </div>
+               <div class="exhibition-details-container">
+                    <h1 class="exhibition-name">${exhibition.name}</h1>
+                    <p class="exhibition-date">${exhibition.date}</p>
+               </div>
           </article>
           `;
      }

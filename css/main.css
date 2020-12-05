@@ -290,9 +290,37 @@ html {
 
 /* EXHIBITIONS PAGE */
 
+#exhibitions {
+    padding: 0;
+}
+
 .exhibition-item {
-    height: 15vh;
+    width: 100vw;
+    position: relative;
+}
+
+.exhibition-name {
+    font-size: 20px;
+}
+
+.exhibition-date {
+    font-size: 16px;
+}
+
+.exhibition-details-container {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: #F2F2F2;
+}
+
+.image-container {
+    width: 100vw;
+}
+
+.exhibition-image {
+    max-width: 100%;
 }
