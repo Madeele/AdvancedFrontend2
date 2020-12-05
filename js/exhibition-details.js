@@ -1,17 +1,14 @@
 const _artworkRef = _db.collection("artworks");
-let _artwork;
 
-function read() {
-    this.artworkRef.onSnapshot(snapshotData => {
-        let artworks = [];
-        snapshotData.forEach(doc => {
-            let artwork = doc.data();
-            artwork.id = doc.id;
-            artworks.push(artwork);
-        });
-        this.appendArtworks(artworks);
+_artworkRef.onSnapshot(function (snapshotData) {
+    let artworks = [];
+    snapshotData.forEach(function (doc) {
+        let artwork = doc.data();
+        artwork.id = doc.id;
+        artworks.push(artwork);
     });
-}
+    appendArtworks(artworks);
+});
 
 function appendArtworks(artworks) {
     let template = "";
