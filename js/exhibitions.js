@@ -11,7 +11,7 @@ _exhibitionRef.onSnapshot(function (snapshotData) {
      });
      appendExhibitions(exhibitions);
 });
-
+     
 function appendExhibitions(exhibitions) {
      let template = /*html*/ `<section id="exhibitions" class="page">`;
      for (let exhibition of exhibitions) {
@@ -23,6 +23,5 @@ function appendExhibitions(exhibitions) {
           </article>
           `;
      }
-     document.querySelector("#app").innerHTML = template + "</section>";
+     document.querySelector("#body").innerHTML = template + "</section>";
 }
-
