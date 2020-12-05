@@ -1,7 +1,6 @@
 
 function mapTemplate() {
-    document.querySelector("#app").innerHTML += /*html*/ `    
-        <section id="map" class="page map_page">
+    document.querySelector("#map").innerHTML += /*html*/ `    
             <header class="topbar">
                <h2>Kunste Museum Map</h2>
             </header>
@@ -45,7 +44,6 @@ function mapTemplate() {
                     </div>
                 </div>
             </div> 
-        </section>
     `;
 }
 
