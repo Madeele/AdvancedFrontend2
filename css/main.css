@@ -28,7 +28,7 @@ html {
     width: 100%;
     height: 100%;
     font-family: 'Lato', sans-serif;
-    overflow: hidden;
+    /** overflow: hidden; **/
 }
 
 .page {
@@ -207,16 +207,17 @@ html {
 
 /***EXHIBITION DETAILS PAGE***/
 
-.exhibition-details {
+#exhibition-details {
     padding: 0;
     background-color: var(--black);
+    height: fit-content;
 }
 
 #details-banner {
     color: var(--white);
     background: radial-gradient(circle, rgba(0, 0, 0, 0.35) 100%,
             rgba(255, 255, 255, 1) 100%),
-        url("../media/søndag-morgen.jpg");
+        url("../media/human-nature.jpg");
     height: 40vh;
     width: 100%;
     background-size: cover;
@@ -256,8 +257,8 @@ html {
 }
 
 #exhibition-artworks {
-     color: var(--white);
-     background-color: var(--black);
+    color: var(--white);
+    background-color: var(--black);
 }
 
 .list_title {
@@ -267,7 +268,7 @@ html {
 
 #artwork-list {
     position: relative;
-} 
+}
 
 #exhibition-artworks {
     height: 13vh;
@@ -299,7 +300,7 @@ html {
     justify-content: flex-end;
 }
 
-.map_floors{
+.map_floors {
     align-self: flex-end;
     font-weight: 600;
     height: auto;
@@ -326,4 +327,41 @@ html {
     width: 35px;
     height: 35px;
     margin: 10px 5px;
+}
+
+/* EXHIBITIONS PAGE */
+
+#exhibitions {
+    padding: 0;
+}
+
+.exhibition-item {
+    width: 100vw;
+    position: relative;
+}
+
+.exhibition-name {
+    font-size: 20px;
+}
+
+.exhibition-date {
+    font-size: 16px;
+}
+
+.exhibition-details-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #F2F2F2;
+}
+
+.image-container {
+    width: 100vw;
+}
+
+.exhibition-image {
+    max-width: 100%;
 }
