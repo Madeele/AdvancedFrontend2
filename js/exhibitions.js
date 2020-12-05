@@ -13,7 +13,7 @@ _exhibitionRef.onSnapshot(function (snapshotData) {
 });
 
 function appendExhibitions(exhibitions) {
-     let template = /*html*/ `<section id="exhibitions">`;
+     let template = /*html*/ `<section id="exhibitions" class="page">`;
      for (let exhibition of exhibitions) {
           template += /*html*/ `
           <article class="exhibition-item">
