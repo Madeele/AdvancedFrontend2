@@ -27,7 +27,7 @@ html {
     width: 100%;
     height: 100%;
     font-family: 'Lato', sans-serif;
-    overflow: hidden;
+    /** overflow: hidden; **/
 }
 
 .page {
@@ -40,7 +40,7 @@ html {
 .home-page {
     height: 100vh;
     width: 100%;
-    background-image: url("../img/bg-img.jpg");
+    background-image: url("../media/bg-img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -166,16 +166,17 @@ html {
 
 /***EXHIBITION DETAILS PAGE***/
 
-.exhibition-details {
+#exhibition-details {
     padding: 0;
     background-color: var(--black);
+    height: fit-content;
 }
 
 #details-banner {
     color: var(--white);
     background: radial-gradient(circle, rgba(0, 0, 0, 0.35) 100%,
             rgba(255, 255, 255, 1) 100%),
-        url("../media/søndag-morgen.jpg");
+        url("../media/human-nature.jpg");
     height: 40vh;
     width: 100%;
     background-size: cover;

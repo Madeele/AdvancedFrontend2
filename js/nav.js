@@ -19,7 +19,7 @@ function appendNav(){
         </nav>
     </div>
     `;
-    document.querySelector("#app").innerHTML = navTemplate;
+    document.querySelector(".nav").innerHTML = navTemplate;
     console.log("nav");
 }
 
