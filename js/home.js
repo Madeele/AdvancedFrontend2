@@ -1,15 +1,26 @@
 function appendHomePage(){
     document.querySelector("#home").innerHTML += /*html*/`
-            <header class="topbar">
-                <h1>KuNSTE</h1>
-                <h2>Art museum</h2>
-            </header>
-            <div class="nav-btn" onclick="openCloseNav()">
-                <div></div>
-                <div></div>
+    <div class="home-content">
+        <header class="applogo">
+            <h1>KuNSTE</h1>
+            <h2>Art museum</h2>
+        </header>
+        <div class="nav-btn" onclick="openCloseNav()">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="current-exhibitions">
+            <h3>Current exhibition</h3>
+            <div class="current-exhibitions-stuff">
+                <img src="./media/human-nature.jpg">
+                <img src="./media/human-nature.jpg">
+                <img src="./media/human-nature.jpg">
+                <img src="./media/human-nature.jpg">
             </div>
-            <h3>SPA Template Modules Pages</h3>
-            <p>My Single Page Web App Template</p>
+            <a href="#exhibitions" class="more">See more</a>
+        </div>    
+        
     `;
 }   
 

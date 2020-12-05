@@ -21,6 +21,7 @@ h4,
 h5,
 h6 {
     font-family: "futura-pt";
+    text-transform: uppercase;
 }
 
 html {
@@ -44,6 +45,46 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    flex-direction: column;
+    padding: 0;
+}
+
+.home-content{
+    padding: 20px;
+}
+
+.applogo{
+    color: var(--white);
+}
+
+.current-exhibitions{
+    margin-top: auto;
+    background-color: rgba(26, 26, 26, 0.6);
+    padding: 20px;
+    color: var(--white);
+}
+
+.current-exhibitions-stuff{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin: 15px 0;
+}
+
+.current-exhibitions-stuff img{
+    height: 150px;
+    width: auto;
+    margin-left: 20px;
+}
+
+.current-exhibitions-stuff img:first-child{
+    margin-left: 0px;
+}
+
+.more{
+    color: var(--white);
+    text-decoration: none;
+    text-align: right;
 }
 
 
@@ -73,7 +114,7 @@ html {
 }
 
 .nav-container {
-    background-color: rgba(26, 26, 26, 0.596);
+    background-color: rgba(26, 26, 26, 0.6);
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -230,8 +271,8 @@ width: 25vw;
 }
 
 #exhibition-artworks {
-     color: var(--white);
-     background-color: var(--black);
+    color: var(--white);
+    background-color: var(--black);
 }
 
 .list_title {
@@ -241,7 +282,7 @@ width: 25vw;
 
 #artwork-list {
     position: relative;
-} 
+}
 
 #exhibition-artworks {
     height: 13vh;
@@ -280,7 +321,7 @@ width: 25vw;
     justify-content: flex-end;
 }
 
-.map_floors{
+.map_floors {
     align-self: flex-end;
     font-weight: 600;
     height: auto;
@@ -307,4 +348,41 @@ width: 25vw;
     width: 35px;
     height: 35px;
     margin: 10px 5px;
+}
+
+/* EXHIBITIONS PAGE */
+
+#exhibitions {
+    padding: 0;
+}
+
+.exhibition-item {
+    width: 100vw;
+    position: relative;
+}
+
+.exhibition-name {
+    font-size: 20px;
+}
+
+.exhibition-date {
+    font-size: 16px;
+}
+
+.exhibition-details-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #F2F2F2;
+}
+
+.image-container {
+    width: 100vw;
+}
+
+.exhibition-image {
+    max-width: 100%;
 }
