@@ -1,5 +1,4 @@
 
-
 function appendNav(){
     document.querySelector("#app").innerHTML += /*html*/`
     <div class="nav-container">
@@ -21,5 +20,3 @@ function appendNav(){
     </div>
     `;
 }
-
-appendNav();
