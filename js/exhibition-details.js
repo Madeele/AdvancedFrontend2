@@ -7,10 +7,10 @@ _artworkRef.onSnapshot(function (snapshotData) {
         artwork.id = doc.id;
         artworks.push(artwork);
     });
-    appendArtwork(artworks);
+    appendArtworks(artworks);
 });
 
-function appendArtwork(artworks) {
+function appendArtworks(artworks) {
     let template = "";
     for (let artwork of artworks) {
         template += /*html*/ `
@@ -26,8 +26,8 @@ function appendArtwork(artworks) {
     document.querySelector("#artwork-list").innerHTML = template;
 }
 
-function template() {
-    document.querySelector('#app').innerHTML += /*html*/ `
+function exhibitonDetailsTemplate() {
+    document.querySelector('#exhibition-details').innerHTML += /*html*/ `
                <section id="exhibition-details" class="page exhibition-details">
                    <div class="nav-btn">
                     <div></div>
@@ -59,3 +59,4 @@ function template() {
           `;
 }
 
+exhibitonDetailsTemplate();
