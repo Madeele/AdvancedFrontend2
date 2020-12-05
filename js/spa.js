@@ -12,8 +12,11 @@ function hideAllPages() {
 // show page or tab
 function showPage(pageId) {
   hideAllPages();
-  document.querySelector(`#${pageId}`).style.display = "block";
-  setActiveTab(pageId);
+  if(pageId == "home"){
+    document.querySelector(`#${pageId}`).style.display = "flex";
+  } else {
+    document.querySelector(`#${pageId}`).style.display = "block";
+  }
 }
 
 // sets active tabbar/ menu item
