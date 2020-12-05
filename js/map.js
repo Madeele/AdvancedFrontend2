@@ -52,6 +52,6 @@ function mapTemplate() {
 mapTemplate();
 
 function closeFloors(){
-    document.querySelectorAll(".circles_numbers").style.color= "red"
+    document.querySelector(".circles_numbers").style.color= "red"
 }
 
