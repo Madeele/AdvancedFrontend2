@@ -1,6 +1,5 @@
 function appendHomePage(){
-    document.querySelector("#app").innerHTML += /*html*/`
-        <section id="home" class="page home-page">
+    document.querySelector("#home").innerHTML += /*html*/`
             <header class="topbar">
                 <h1>KuNSTE</h1>
                 <h2>Art museum</h2>
@@ -11,7 +10,6 @@ function appendHomePage(){
             </div>
             <h3>SPA Template Modules Pages</h3>
             <p>My Single Page Web App Template</p>
-        </section>
     `;
 }   
 
@@ -20,6 +18,7 @@ appendHomePage();
 function openCloseNav(){
     appendNav();
     let navContainer = document.querySelector(".nav-container");
+    navContainer.style.right = "0px";
     if(navContainer.style.right = "-3000px"){
         navContainer.style.right = "0px";
         console.log("Open nav");
