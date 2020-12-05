@@ -12,7 +12,7 @@ let firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
+const firebaseDB = firebase.firestore();
 
   // let ui = new firebaseui.auth.AuthUI(firebase.auth());
 

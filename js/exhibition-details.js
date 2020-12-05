@@ -1,23 +1,21 @@
-// Firebase config 
 
 
-
-    function read() {
-        this.artworkRef.onSnapshot(snapshotData => {
-            let artworks = [];
-            snapshotData.forEach(doc => {
-                let artwork = doc.data();
-                artwork.id = doc.id;
-                artworks.push(artwork);
-            });
-            this.appendArtworks(artworks);
+function read() {
+    this.artworkRef.onSnapshot(snapshotData => {
+        let artworks = [];
+        snapshotData.forEach(doc => {
+            let artwork = doc.data();
+            artwork.id = doc.id;
+            artworks.push(artwork);
         });
-    }
+        this.appendArtworks(artworks);
+    });
+}
 
-    function appendArtworks(artworks) {
-        let template = "";
-        for (let artwork of artworks) {
-            template += /*html*/ `
+function appendArtworks(artworks) {
+    let template = "";
+    for (let artwork of artworks) {
+        template += /*html*/ `
         <article id="exhibition-artworks">
         <div id="artwork-text">
             <h1 class="artwork_title">${artwork.title}</h1>
@@ -26,12 +24,12 @@
         <img class="artwork_img" src='${artwork.image}'>
         </article>
         `;
-        }
-        document.querySelector("#artwork-list").innerHTML = template;
     }
+    document.querySelector("#artwork-list").innerHTML = template;
+}
 
-    function template() {
-        document.querySelector('#app').innerHTML += /*html*/ `
+function template() {
+    document.querySelector('#app').innerHTML += /*html*/ `
                <section id="exhibition-details" class="page exhibition-details">
                    <div class="nav-btn">
                     <div></div>
@@ -61,5 +59,5 @@
                 </div>
                </section>
           `;
-    }
+}
 
