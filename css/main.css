@@ -55,6 +55,7 @@ html {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+    z-index: 2;
 }
 
 .nav-btn div {
@@ -192,6 +193,14 @@ html {
     font-size: 30px;
 }
 
+.banner_img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 18px;
+    padding-right: 30px;
+}
+
 #details-description {
     padding: 30px;
     color: var(--white);
@@ -201,18 +210,23 @@ html {
 
 .description_title {
     font-size: 30px;
+    margin-bottom: 2vh;
 }
 
 .description-text {
     font-size: 16px;
 }
 
+#floor-description {
+padding: 20vh 0;
+width: 25vw;
+}
+
 .floor_number {
     font-size: 48px;
     transform: rotate(270deg);
     white-space: nowrap;
-    width: 12vh;
-    left: 0;
+    height: 10vh;
 }
 
 #exhibition-artworks {
@@ -237,11 +251,18 @@ html {
     width: 100%;
     height: 13vh;
     object-fit: cover;
+    opacity: 0.4;
 }
 
 #artwork-text {
     position: absolute;
     padding: 30px;
+    width: 100%;
+    z-index: 2;
+}
+
+.artworks_arrow {
+    float: right;
 }
 
 /****** MAP PAGE*******/

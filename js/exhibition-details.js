@@ -18,6 +18,7 @@ function appendArtworks(artworks) {
         <div id="artwork-text">
             <h1 class="artwork_title">${artwork.title}</h1>
             <p class="artwork_name">${artwork.name}</p>
+            <img src="/media/arrow.svg" alt="arrow" class="artworks_arrow">
         </div>
         <img class="artwork_img" src='${artwork.image}'>
         </article>
@@ -35,9 +36,10 @@ function exhibitonDetailsTemplate() {
                 </div>
                   <div id="details-banner">
                       <h3 class="exhibition_title">Human Nature</h3>
+                      <a href="#map"><img src="/media/map.svg" alt="map" class="banner_img"></a>
                   </div>
                   <div id="details-description">
-                      <div>
+                      <div id="floor-description">
                       <h1 class="floor_number">Floor 8</h1>
                     </div>
                       <div>
