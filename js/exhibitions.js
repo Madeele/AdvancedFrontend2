@@ -19,7 +19,6 @@ function appendExhibitions(exhibitions) {
           <article class="exhibition-item">
                <h1 class="exhibition-name">${exhibition.name}</h1>
                <p class="exhibition-date">${exhibition.date}</p>
-
           </article>
           `;
      }

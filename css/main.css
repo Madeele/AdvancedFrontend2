@@ -215,8 +215,8 @@ html {
 }
 
 #exhibition-artworks {
-     color: var(--white);
-     background-color: var(--black);
+    color: var(--white);
+    background-color: var(--black);
 }
 
 .list_title {
@@ -226,7 +226,7 @@ html {
 
 #artwork-list {
     position: relative;
-} 
+}
 
 #exhibition-artworks {
     height: 13vh;
@@ -258,7 +258,7 @@ html {
     justify-content: flex-end;
 }
 
-.map_floors{
+.map_floors {
     align-self: flex-end;
     font-weight: 600;
     height: auto;
@@ -285,4 +285,13 @@ html {
     width: 35px;
     height: 35px;
     margin: 10px 5px;
+}
+
+/* EXHIBITIONS PAGE */
+
+.exhibition-item {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
