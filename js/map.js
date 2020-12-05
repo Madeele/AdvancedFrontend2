@@ -14,31 +14,31 @@ function mapTemplate() {
                     <p>Floor</p>
                         <div class="circle">-3</div>
                     </div>
-                    <div class="circles_numbers">
+                    <div class="circles_numbers" onclick="closeFloors()">
                     <p>Floor</p>
                         <div class="circle">-2</div>
                     </div>
-                    <div class="circles_numbers">
+                    <div class="circles_numbers" onclick="closeFloors()">
                     <p>Floor</p>
                         <div class="circle">-1</div>
                     </div>
-                    <div class="circles_numbers">
+                    <div class="circles_numbers" onclick="closeFloors()">
                     <p>Floor</p>
                         <div class="circle">0</div>
                     </div>
-                    <div class="circles_numbers">
+                    <div class="circles_numbers" onclick="closeFloors()">
                     <p>Floor</p>
                         <div class="circle">1</div>
                     </div>
-                    <div class="circles_numbers">
+                    <div class="circles_numbers" onclick="closeFloors()">
                     <p>Floor</p>
                         <div class="circle">2</div>
                     </div>
-                    <div class="circles_numbers">
+                    <div class="circles_numbers" onclick="closeFloors()">
                     <p>Floor</p>
                         <div class="circle">3</div>
                     </div>
-                    <div class="circles_numbers">
+                    <div class="circles_numbers" onclick="closeFloors()">
                     <p>Floor</p>
                         <div class="circle">4</div>
                     </div>
@@ -50,6 +50,9 @@ function mapTemplate() {
 mapTemplate();
 
 function closeFloors(){
-    document.querySelector(".circles_numbers").style.color= "red"
+    let circles = document.querySelectorAll(".circles_numbers");
+  for (let circle of circles) {
+    circle.classList.toggle("hidden_floors")
+  }
 }
 
