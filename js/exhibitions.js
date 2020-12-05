@@ -3,13 +3,13 @@
 const _exhibitionRef = _db.collection("exhibitions");
 
 _exhibitionRef.onSnapshot(function (snapshotData) {
-  let exhibitions = [];
-  snapshotData.forEach(function (doc) {
-    let exhibition = doc.data();
-    exhibition.id = doc.id;
-    exhibitions.push(exhibition);
-  });
-  appendExhibitions(exhibitions);
+     let exhibitions = [];
+     snapshotData.forEach(function (doc) {
+          let exhibition = doc.data();
+          exhibition.id = doc.id;
+          exhibitions.push(exhibition);
+     });
+     appendExhibitions(exhibitions);
 });
 
 function template() {
