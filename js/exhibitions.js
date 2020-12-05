@@ -3,25 +3,17 @@
 const _exhibitionRef = _db.collection("exhibitions");
 
 _exhibitionRef.onSnapshot(function (snapshotData) {
-     let exhibitions = [];
-     snapshotData.forEach(function (doc) {
-          let exhibition = doc.data();
-          exhibition.id = doc.id;
-          exhibitions.push(exhibition);
-     });
+  let exhibitions = [];
+  snapshotData.forEach(function (doc) {
+    let exhibition = doc.data();
+    exhibition.id = doc.id;
+    exhibitions.push(exhibition);
+  });
      appendExhibitions(exhibitions);
 });
 
-function template() {
-     document.querySelector('#app').innerHTML += /*html*/ `
-          <section id="exhibitions" class="page">
-          <div id="exhibitions-list" class="list-container"></div>
-          </section>
-     `;
-}
-
 function appendExhibitions(exhibitions) {
-     let template = "";
+     let template = /*html*/ `<section id="exhibitions">`;
      for (let exhibition of exhibitions) {
           template += /*html*/ `
           <article class="exhibition-item">
@@ -31,6 +23,6 @@ function appendExhibitions(exhibitions) {
           </article>
           `;
      }
-     document.querySelector("#exhibitions-list").innerHTML = template;
+     document.querySelector("#app").innerHTML = template + "</section>";
 }
 

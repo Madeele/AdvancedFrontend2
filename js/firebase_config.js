@@ -1,7 +1,7 @@
 "use strict";
 
 // ========== GLOBAL FIREBASE CONFIG ========== //
-const firebaseConfig = {
+const _firebaseConfig = {
   apiKey: "AIzaSyB_hzIzGveoKkzeV6qVqm1OlX_EfTa24yE",
   authDomain: "kunstemuseum.firebaseapp.com",
   databaseURL: "https://kunstemuseum.firebaseio.com",
@@ -10,7 +10,7 @@ const firebaseConfig = {
   messagingSenderId: "996800259116",
   appId: "1:996800259116:web:b940f8cf566ceb78c81d89"
 };
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(_firebaseConfig);
 const _db = firebase.firestore();
 
 
