@@ -1,4 +1,5 @@
-
+const _artworkRef = _db.collection("artworks");
+let _artwork;
 
 function read() {
     this.artworkRef.onSnapshot(snapshotData => {
