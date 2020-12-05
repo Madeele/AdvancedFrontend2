@@ -7,10 +7,10 @@ _artworkRef.onSnapshot(function (snapshotData) {
         artwork.id = doc.id;
         artworks.push(artwork);
     });
-    appendArtworks(artworks);
+    appendArtwork(artworks);
 });
 
-function appendArtworks(artworks) {
+function appendArtwork(artworks) {
     let template = "";
     for (let artwork of artworks) {
         template += /*html*/ `
