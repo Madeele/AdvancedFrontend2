@@ -9,19 +9,11 @@ _exhibitionRef.onSnapshot(function (snapshotData) {
     exhibition.id = doc.id;
     exhibitions.push(exhibition);
   });
-  appendExhibitions(exhibitions);
+     appendExhibitions(exhibitions);
 });
 
-function template() {
-     document.querySelector('#app').innerHTML += /*html*/ `
-          <section id="exhibitions" class="page">
-          <div id="exhibitions-list" class="list-container"></div>
-          </section>
-     `;
-}
-
 function appendExhibitions(exhibitions) {
-     let template = "";
+     let template = /*html*/ `<section id="exhibitions" class="page">`;
      for (let exhibition of exhibitions) {
           template += /*html*/ `
           <article class="exhibition-item">
@@ -31,6 +23,6 @@ function appendExhibitions(exhibitions) {
           </article>
           `;
      }
-     document.querySelector("#exhibitions-list").innerHTML = template;
+     document.querySelector("#app").innerHTML = template + "</section>";
 }
 
