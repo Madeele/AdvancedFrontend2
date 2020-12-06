@@ -365,7 +365,6 @@ html {
     margin: 10px 5px;
 }
 
-<<<<<<< Updated upstream
 /* EXHIBITIONS PAGE */
 
 #exhibitions {
@@ -401,8 +400,77 @@ html {
 
 .exhibition-image {
     max-width: 100%;
-=======
+}
+
 .hidden_floors {
     margin-top: -60px;
->>>>>>> Stashed changes
+}
+
+/***ONBOARDING PAGE***/
+
+#onboarding {
+    padding: 0;
+    overflow: hidden;
+}
+
+.onboarding_img {
+    height: 100%;
+    margin-left: -70px;
+    position: relative;
+}
+
+#onboarding-content {
+    padding: 30px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    height: 40%;
+    bottom: 0;
+    color: white;
+}
+
+.onboarding_title {
+    font-size: 30px;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+
+.onboarding_text {
+    font-size: 16px;
+    margin-bottom: 4vh;
+}
+
+#onboarding-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.skip_btn {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: "futura-pt";
+    font-size: 18px;
+}
+
+#progress-dots {
+    margin: auto;
+}
+
+.dot_active {
+  height: 8px;
+  width: 8px;
+  margin: 0 5px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 5px;
+  background-color: #848A94;
+  border-radius: 50%;
+  display: inline-block;
 }
