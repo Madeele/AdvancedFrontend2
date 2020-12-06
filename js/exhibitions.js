@@ -1,5 +1,3 @@
-//Firebase
-
 const _exhibitionRef = _db.collection("exhibitions");
 
 _exhibitionRef.onSnapshot(function (snapshotData) {
@@ -20,6 +18,7 @@ function appendExhibitions(exhibitions) {
                <div class="image-container">
                     <img src="${exhibition.image}" alt="exhibition" class="exhibition-image">
                </div>
+               <div class="dark-overlay"></div>
                <div class="exhibition-details-container">
                     <h1 class="exhibition-name">${exhibition.name}</h1>
                     <div class="date-arrow-container">
@@ -27,7 +26,6 @@ function appendExhibitions(exhibitions) {
                     <img src="/media/arrow.svg" alt="arrow" id="arrow">
                     </div>
                </div>
-               
           </article>
           `;
      }
