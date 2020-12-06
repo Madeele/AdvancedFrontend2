@@ -49,39 +49,39 @@ html {
     padding: 0;
 }
 
-.home-content{
+.home-content {
     padding: 20px;
 }
 
-.applogo{
+.applogo {
     color: var(--white);
 }
 
-.current-exhibitions{
+.current-exhibitions {
     margin-top: auto;
     background-color: rgba(26, 26, 26, 0.6);
     padding: 20px;
     color: var(--white);
 }
 
-.current-exhibitions-stuff{
+.current-exhibitions-stuff {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
     margin: 15px 0;
 }
 
-.current-exhibitions-stuff img{
+.current-exhibitions-stuff img {
     height: 150px;
     width: auto;
     margin-left: 20px;
 }
 
-.current-exhibitions-stuff img:first-child{
+.current-exhibitions-stuff img:first-child {
     margin-left: 0px;
 }
 
-.more{
+.more {
     color: var(--white);
     text-decoration: none;
     text-align: right;
@@ -365,7 +365,6 @@ html {
     margin: 10px 5px;
 }
 
-<<<<<<< Updated upstream
 /* EXHIBITIONS PAGE */
 
 #exhibitions {
@@ -387,12 +386,11 @@ html {
 
 .exhibition-details-container {
     position: absolute;
-    top: 0;
+    color: var(--white);
+    bottom: 0;
     left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: #F2F2F2;
+    padding: 30px;
+    width: 100%;
 }
 
 .image-container {
@@ -401,8 +399,9 @@ html {
 
 .exhibition-image {
     max-width: 100%;
-=======
-.hidden_floors {
-    margin-top: -60px;
->>>>>>> Stashed changes
+}
+
+.date-arrow-container {
+    display: flex;
+    justify-content: space-between;
 }

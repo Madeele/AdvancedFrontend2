@@ -22,8 +22,12 @@ function appendExhibitions(exhibitions) {
                </div>
                <div class="exhibition-details-container">
                     <h1 class="exhibition-name">${exhibition.name}</h1>
-                    <p class="exhibition-date">${exhibition.date}</p>
+                    <div class="date-arrow-container">
+                    <p class="exhibition-date">Exhibition end: ${exhibition.date}</p>
+                    <img src="/media/arrow.svg" alt="arrow" id="arrow">
+                    </div>
                </div>
+               
           </article>
           `;
      }
