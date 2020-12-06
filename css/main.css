@@ -216,7 +216,7 @@ html {
 
 #details-banner {
     color: var(--white);
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.35) 100%,
+    background: radial-gradient(circle, rgba(82, 82, 82, 0.4) 100%,
             rgba(255, 255, 255, 1) 100%),
         url("../media/human-nature.jpg");
     height: 40vh;
@@ -238,7 +238,7 @@ html {
     position: absolute;
     bottom: 0;
     right: 0;
-    padding-bottom: 18px;
+    padding-bottom: 20px;
     padding-right: 30px;
 }
 
@@ -259,8 +259,8 @@ html {
 }
 
 #floor-description {
-padding: 20vh 0;
-width: 25vw;
+    padding: 20vh 0;
+    width: 25vw;
 }
 
 .floor_number {
@@ -278,6 +278,7 @@ width: 25vw;
 .list_title {
     font-size: 24px;
     padding: 30px;
+    background-color: #262626;
 }
 
 #artwork-list {
@@ -292,18 +293,32 @@ width: 25vw;
     width: 100%;
     height: 13vh;
     object-fit: cover;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
-#artwork-text {
+#artwork-content {
     position: absolute;
-    padding: 30px;
     width: 100%;
+    height: 13vh;
     z-index: 2;
 }
 
+#artwork-text {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 25px;
+}
+
+.artwork_title {
+    margin-bottom: 2vh;
+}
+
 .artworks_arrow {
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 62px 30px;
 }
 
 /****** MAP PAGE*******/

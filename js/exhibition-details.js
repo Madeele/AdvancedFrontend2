@@ -1,3 +1,5 @@
+// Appending artworks from firebase //
+
 const _artworkRef = _db.collection("artworks");
 
 _artworkRef.onSnapshot(function (snapshotData) {
@@ -15,10 +17,12 @@ function appendArtworks(artworks) {
     for (let artwork of artworks) {
         template += /*html*/ `
         <article id="exhibition-artworks">
+        <div id="artwork-content">
         <div id="artwork-text">
             <h1 class="artwork_title">${artwork.title}</h1>
             <p class="artwork_name">${artwork.name}</p>
-            <img src="/media/arrow.svg" alt="arrow" class="artworks_arrow">
+        </div>
+            <img src="/media/arrow.svg" onclick="navigateTo('art-details')" alt="arrow" class="artworks_arrow">
         </div>
         <img class="artwork_img" src='${artwork.image}'>
         </article>
@@ -26,6 +30,8 @@ function appendArtworks(artworks) {
     }
     document.querySelector("#artwork-list").innerHTML = template;
 }
+
+// Page structure using html template //
 
 function exhibitonDetailsTemplate() {
     document.querySelector('#exhibition-details').innerHTML += /*html*/ `
@@ -36,7 +42,7 @@ function exhibitonDetailsTemplate() {
                 </div>
                   <div id="details-banner">
                       <h3 class="exhibition_title">Human Nature</h3>
-                      <a href="#map"><img src="/media/map.svg" alt="map" class="banner_img"></a>
+                      <img src="/media/map.svg" onclick="navigateTo('map')" alt="map" class="banner_img">
                   </div>
                   <div id="details-description">
                       <div id="floor-description">
