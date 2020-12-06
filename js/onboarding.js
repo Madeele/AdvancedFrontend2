@@ -13,15 +13,15 @@ function onboardingTemplate() {
                     <button onclick="navigateTo('home')" class="skip_btn">SKIP</button>
                     <div id="progress-dots">
                     <span class="dot_active"></span>
-                    <span onclick="navigateTo('onboarding-content2')" class="dot"></span>
-                    <span onclick="navigateTo('onboarding-content3')" class="dot"></span>
+                    <span onclick="navigateTo('onboarding2')" class="dot"></span>
+                    <span onclick="navigateTo('')" class="dot"></span>
                 </div>
                     <img src="/media/arrow-big.svg" onclick="navigateTo('onboarding2')" alt="arrow" class="onboarding_arrow">
                 </div>
             </div>
         </section>
-        
         `;
 }
 
 onboardingTemplate();
+

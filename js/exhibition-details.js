@@ -1,5 +1,4 @@
 // Appending artworks from firebase //
-
 const _artworkRef = _db.collection("artworks");
 
 _artworkRef.onSnapshot(function (snapshotData) {
@@ -18,6 +17,7 @@ function appendArtworks(artworks) {
         template += /*html*/ `
         <article id="exhibition-artworks">
         <div id="artwork-content">
+        <div id="overlay">
         <div id="artwork-text">
             <h1 class="artwork_title">${artwork.title}</h1>
             <p class="artwork_name">${artwork.name}</p>
@@ -25,6 +25,7 @@ function appendArtworks(artworks) {
             <img src="/media/arrow.svg" onclick="navigateTo('art-details')" alt="arrow" class="artworks_arrow">
         </div>
         <img class="artwork_img" src='${artwork.image}'>
+        </div>
         </article>
         `;
     }
