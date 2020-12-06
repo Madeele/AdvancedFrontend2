@@ -365,6 +365,7 @@ html {
     margin: 10px 5px;
 }
 
+<<<<<<< Updated upstream
 /* EXHIBITIONS PAGE */
 
 #exhibitions {
@@ -400,4 +401,8 @@ html {
 
 .exhibition-image {
     max-width: 100%;
+=======
+.hidden_floors {
+    margin-top: -60px;
+>>>>>>> Stashed changes
 }
